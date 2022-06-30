@@ -36,6 +36,20 @@
 
 </head>
 
+<script>
+	function myFunction() {
+  /* Get the text field */
+  var copyText = "Anas#0284";
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText);
+
+  /* Alert the copied text */
+  alert("Mon pseudo Discord a bien été copié dans votre presse-papier, collez le dans votre application pour m'ajouter et me contacter ! ("+ copyText+")");
+}
+</script>
+
+
 <body> 
 	
 	<!-- PRELOADER -->
@@ -250,7 +264,7 @@
 								</div>
 								<div class="details">
 									<h3 class="name">Anas_<span>Ouh</span></h3>
-									<p class="job">Jeune monteur et éditeur de vidéo, d'autrepart développeur de bot
+									<p class="job">Jeune monteur et éditeur de vidéo, développeur de bot
 										Discord et avide d'expérience.</p>
 									<div class="social">
 										<ul>
@@ -259,7 +273,7 @@
 														src="img/svg/social/twitter.svg" alt=""></a></li>
 											<li><a href="https://instagram.com/anas_ouh"><img class="svg"
 														src="img/svg/social/instagram.svg" alt=""></a></li>
-											<li><a href="#"><img class="svg" src="img/svg/social/discord.svg"
+											<li><a onclick="myFunction()" href="#"><img class="svg" src="img/svg/social/discord.svg"
 														alt=""></a></li>
 
 										</ul>
@@ -341,6 +355,22 @@
 							</div>
 							<div class="list_wrapper">
 								<ul class="portfolio_list gallery_zoom">
+									<li class="youtube">
+										<div class="inner">
+											<div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Shini"
+												data-category="Youtube">
+												<a class="popup-youtube"
+													href="https://www.youtube.com/watch?v=RBJtvdKkErE">
+													<img src="https://i3.ytimg.com/vi/RBJtvdKkErE/maxresdefault.jpg"
+														alt="">
+													<div class="main_image"
+														data-img-url="https://i3.ytimg.com/vi/RBJtvdKkErE/maxresdefault.jpg"
+														style="background-image: url(&quot;https://i3.ytimg.com/vi/RBJtvdKkErE/maxresdefault.jpg&quot;);">
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
 									<li class="youtube">
 										<div class="inner">
 											<div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Shini"
@@ -1049,7 +1079,7 @@
 											src="img/svg/social/twitter.svg" alt=""></a>
 									<a href="https://instagram.com/anas_ouh"><img width="22px" style="margin-left: 5px"
 											src="img/svg/social/instagram.svg" alt=""></a>
-									<a href="#"><img width="22px" style="margin-left: 5px"
+									<a onclick="myFunction()"  href="#"><img width="22px" style="margin-left: 5px"
 											src="img/svg/social/discord.svg" alt=""></a>
 								</div>
 								<div class="fields">

@@ -1485,12 +1485,25 @@ h6 { font-size: 16px; }
 	margin-top: 0px;
 }
 .tokyo_tm_modalbox .close{
-	position: fixed;
 	left: 100%;
-	top: 0px;
-	margin-left: 40px;
-	z-index: 111111;
+    /* position: fixed; */
+    margin-top: -42px;
+    /* justify-content: right; */
+    top: 0px;
+    /* margin-left: 40px; */
+    z-index: 111111;
+    width: 22px;
+    float: right;
 }
+
+.close img{
+	filter: invert(80%);
+}
+
+.close img:hover{
+	filter: invert(100%);
+}
+
 .tokyo_tm_modalbox .close a{
 	text-decoration: none;
 	color: #fff;
